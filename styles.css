@@ -95,12 +95,12 @@ body {
 }
 
 .info-image {
-  width: 100%;
+  width: 95%;
   border-radius: 10px;
 }
 
 .info-text {
-  margin-top: 10px;
+  margin: 10px;
 }
 
 button {
@@ -125,9 +125,9 @@ button:hover {
 }
 
 /* Media query untuk layar ponsel */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 550px) {
   .container {
-    width: 90%; /* Lebar kontainer 90% dari lebar layar */
+    width: 99%; /* Lebar kontainer 90% dari lebar layar */
   }
 
   .card {
