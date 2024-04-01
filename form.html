@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order SilumanKatak</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button[type="submit"],
+        button[type="button"] {
+            width: 100%;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+        }
+        button[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        button[type="button"] {
+            background-color: #f44336;
+            color: white;
+        }
+        button[type="button"]:hover {
+            background-color: #da190b;
+        }
+        @media screen and (max-width: 600px) {
+            form {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Order SilumanKatak</h1>
+    
+    <form action="https://formspree.io/f/xoqgkpky" method="POST">
+        <label for="name">Nama:</label><br>
+        <input type="text" id="name" name="Nama Asli" placeholder="Masukan Nama asli anda." required><br><br>
+        
+        <label for="jenis_kelamin">Jenis Kelamin:</label><br>
+        <select id="jenis_kelamin" name="Jenis Kelamin">
+        	<option value="Pria">Pria</option><option value="Wanita">Wanita</option>
+        </select><br><br>
+        
+        <label for="namedc">Username Discord:</label><br>
+        <input type="text" id="namedc" name="Username DC" placeholder="Masukan Nama username discord anda." required><br><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Masukan akun email anda." required><br><br>
+
+        <label for="nomor">Nomor WhatsApp:</label><br>
+        <input type="number" id="nomor" name="Nomor WA" placeholder="Masukan Nomor WhatsApp aktif anda." required><br><br>
+        
+        <label for="bulan">Sewa untuk:</label><br>
+        <select id="bulan" name="Sewa untuk">
+        	<option value="1 Bulan">1 Bulan</option><option value="2 Bulan">2 Bulan</option><option value="3 Bulan">3 Bulan</option>
+        </select><br><br>
+                
+        <button type="submit">Submit</button>
+    </form>
+    <center>
+    <br><button type="button" onclick="goBack()">Kembali</button><br><br>
+    </center>
+</body>
+</html>
