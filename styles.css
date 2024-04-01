@@ -1,0 +1,125 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0; /* Warna latar belakang mode siang */
+  color: #333; /* Warna teks mode siang */
+  transition: background-color 0.5s, color 0.5s; /* Animasi perubahan warna */
+}
+
+.container {
+  width: 80%;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.card-header {
+  background-color: #840000;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.profile-picture {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.profile-info {
+  text-align: left;
+}
+
+.name {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.position {
+  margin: 0;
+  color: #ccc;
+}
+
+.card-body {
+  padding: 20px;
+  text-align: left;
+}
+
+.social-links {
+  margin-top: 20px;
+}
+
+.social-link {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: #4CAF50;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 20px;
+  line-height: 40px;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.discord {
+  background-color: #3b5998;
+}
+
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.container {
+  width: 80%;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.card {
+  width: 500px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.card-title {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 20px;
+  margin: 0;
+}
+
+.card-content {
+  padding: 20px;
+  text-align: left;
+}
+
+.info-image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.info-text {
+  margin-top: 10px;
+}
+button:hover {
+  background-color: #45a049;
+}
+
+.dark-mode {
+  background-color: #333; /* Warna latar belakang mode malam */
+}
