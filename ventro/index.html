@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Request</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Montserrat:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+    <style>
+        .alert {
+            display: flex;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.2);
+            border: 1px solid #fff;
+            border-radius: 5px;
+            padding: 10px;
+            margin-top: 15px;
+            color: #fff;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1em;
+        }
+        .alert i {
+            margin-right: 10px;
+            color: #ffcc00; /* Warna icon */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="img" style="text-align: center;">
+        <a href="https://discord.gg/AxVJeJCRxJ" style="text-decoration: none;"><img src="img/ventro-icn.png" style="width:250px;top: 100px;image-align: center;"></a>
+        </div>
+        <form id="requestForm" action="https://formspree.io/f/xyzykgez" method="POST" enctype="multipart/form-data">
+            <!-- Input Tersembunyi untuk Judul -->
+            <input type="hidden" name="Judul" value="**Request**">
+            <label for="name">Nama:</label>
+            <input type="text" name="Name" required>
+
+            <label for="discord">Username Discord:</label>
+            <input type="text" name="Akun DC" required>
+
+            <label for="email">Email:</label>
+            <input type="email" name="Email" required>
+
+            <label for="whatsapp">Nomor WhatsApp:</label>
+            <input type="text" name="Whatsapp" placeholder="Contoh: 08123456789" required>
+
+            <label for="age">Umur:</label>
+            <input type="number" name="Age" min="1" max="120" required>
+
+            <label for="requestType">Subject:</label>
+            <select id="requestType" name="Subject" required>
+                <option value="">Pilih Subject</option>
+                <option value="**Lamaran Staff Ventro**">Lamaran Staff Ventro</option>
+                <option value="**Lamaran Admin Ventro**">Lamaran Admin Ventro</option>
+                <option value="**Lamaran Moderator Ventro**">Lamaran Moderator Ventro</option>
+                <option value="**Lamaran Management Ventro**">Lamaran Management Ventro</option>
+            </select>
+
+            <label for="message">Pesan:</label>
+            <textarea name="Message" rows="4" required></textarea>
+            <!-- Input Tersembunyi untuk Tag Khusus -->
+            <input type="hidden" name="Tag" value="<@&1299362083535585342> <@&1299383327241011292>">
+
+            <button type="submit">Kirim</button>
+        </form>
+        
+        <div class="alert">
+            <i class='bx bx-info-circle'></i>
+            Jika sudah mengirimkan Formulir 1x dan sudah masuk ke halaman Formspree (Success) maka tinggal tunggu Tim kami menindak lanjuti saja. <br><strong>Catatan: Tidak boleh spam.</strong>
+        </div>
+    </div>
+</body>
+</html>
